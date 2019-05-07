@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            width: 70%;
+            margin: 0 auto;
+            background-color: rgb(157, 157, 231);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            background-color: #2196F3;
+            padding: 10px;
+            grid-gap: 10px;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 580px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align:center;">ABC Book Gallery!</h1>
+    <p id="message"></p>
+    <input type="button" value="Click Me!" onclick="displayHello();">
+
+    <script src="week3.js"></script>
+</body>
+
+</html>
